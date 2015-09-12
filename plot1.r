@@ -12,12 +12,13 @@ raw_data_sub2 <- subset(raw_data_sub1,raw_data_sub1$Date=="2007-02-01"|raw_data_
 ##########################################
 plot1 <- as.numeric(levels(raw_data_sub2$Global_active_power)[raw_data_sub2$Global_active_power])
 
-loc_name <- paste(wd,"project1/plot1.png",sep="")  
+loc_name <- paste(wd,"project/ExData_Plotting1/plot1.png",sep="")  
 png(loc_name)
 hist(plot1,
      col="red",
      main="Global Active Power",
      xlab="Global Active Power (kilowatts)",
      ylab="Frequency",
+     bg="white",
      breaks=12)
 dev.off()

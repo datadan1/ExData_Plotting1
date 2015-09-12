@@ -21,16 +21,16 @@ volt <- as.numeric(levels(raw_data_sub2[,5])[raw_data_sub2[,5]])
 subm1 <- as.numeric(levels(raw_data_sub2[,7])[raw_data_sub2[,7]])
 subm2 <- as.numeric(levels(raw_data_sub2[,8])[raw_data_sub2[,8]])
 subm3 <- raw_data_sub2[,9]
-dat <- c("Sub_metering1","Sub_metering2","Sub_metering3")
+dat <- c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
 
 #########################
 # Plot and Export
 #########################
 
-loc_name <- paste(wd,"project1/plot4.png",sep="")
+loc_name <- paste(wd,"project/ExData_Plotting1/plot4.png",sep="")
 png(loc_name)
 par(mfrow=c(2,2))
-  plot(t,ga,type="line",xlab=" ",ylab="Global Active Power (kilowatts)")
+  plot(t,ga,type="line",xlab=" ",ylab="Global Active Power")
   plot(t,volt,type="line",ylab="Voltage",xlab="datetime")
   plot(t,subm1,col="black",ylab="Energy sub metering",xlab="",type="n")
     lines(t,subm1,col="black")

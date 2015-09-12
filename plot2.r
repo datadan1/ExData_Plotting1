@@ -18,11 +18,11 @@ t <- strptime(x,"%Y-%m-%d %H:%M:%S")
 ##########################################
 # Plot 2 and Export
 ##########################################
-loc_name <- paste(wd,"project1/plot2.png",sep="")
+loc_name <- paste(wd,"project/ExData_Plotting1/plot2.png",sep="")
 png(loc_name)
 plot(t,plot1,
      type="line",
      ylab="Global Active Power (kilowatts)",
-     xlab=" ",
-     main="Global Active Power usage 2/1/2007 - 2/2/2007")
+     xlab=" ")
+#     main="Global Active Power usage 2/1/2007 - 2/2/2007")
 dev.off()

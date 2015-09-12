@@ -19,12 +19,12 @@ t <- strptime(x,"%Y-%m-%d %H:%M:%S")
 subm1 <- as.numeric(levels(raw_data_sub2[,7])[raw_data_sub2[,7]])
 subm2 <- as.numeric(levels(raw_data_sub2[,8])[raw_data_sub2[,8]])
 subm3 <- raw_data_sub2[,9]
-dat <- c("Sub_metering1","Sub_metering2","Sub_metering3")
+dat <- c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
 ########################
 #Now plot & Export
 ########################
 
-loc_name <- paste(wd,"project1/plot3.png",sep="")
+loc_name <- paste(wd,"project/ExData_Plotting1/plot3.png",sep="")
 png(loc_name)
 plot(t,subm1,col="black",ylab="Energy sub metering",xlab="",type="n")
 lines(t,subm1,col="black")
